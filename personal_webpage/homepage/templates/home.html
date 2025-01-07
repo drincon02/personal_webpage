@@ -1,0 +1,13 @@
+{% load static %}
+{% load i18n %}
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{% static 'css/output.css' %}" rel="stylesheet">
+    </header>
+    <body>
+        <h1 class="font-ibmfamily">{% translate "Hello this is my webpage" %}</h1>
+        <p class="font-bold">Hola si soy yo</p>
+        <img src="{{ MEDIA_ROOT }}/Screenshot_from_2024-12-12_12-11-55_nvQR0LN.png"/>
+    </body>
