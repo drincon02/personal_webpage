@@ -1,13 +1,60 @@
 {% load static %}
 {% load i18n %}
+<!DOCTYPE html>
 <html>
-    <header>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{% static 'css/output.css' %}" rel="stylesheet">
-    </header>
-    <body>
-        <h1 class="font-ibmfamily">{% translate "Hello this is my webpage" %}</h1>
-        <p class="font-bold">Hola si soy yo</p>
-        <img src="{{ MEDIA_ROOT }}/Screenshot_from_2024-12-12_12-11-55_nvQR0LN.png"/>
+    </head>
+    <body class="bg-neutral-700 font-ibmfamily w-full text-xl">
+        <div class="bg-black">
+            <h2 class="text-white text-center text-2xl font-mono font-bold w-full">DiegoRincon@Venezuela</h2>
+        </div>
+        <div class="mt-11">
+            <h1 class="text-green-600 font-bold text-2xl sm:text-6xl text-center">Diego Rincon@Venezuela <span class="text-white">:~$ Software Engineer</span></h1>
+            <div class="flex flex-row items-center w-full justify-center mt-6">
+                <a class="w-20 p-2.5" href="https://github.com/drincon02"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt=""></a>
+                <a class="w-20 p-2.5" href="https://www.linkedin.com/in/diegorinconsaez/"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt=""></a>
+                <a class="w-20 p-2.5" href="mailto:rincondiego2002@gmail.com"><img src="https://static-00.iconduck.com/assets.00/mail-icon-1024x1024-lf56uwrj.png" alt=""></a>
+            </div>
+        </div>
+        <div class="sm:ml-10 flex flex-row items-start justify-start text-white">
+            <div class="px-2.5 bg-black rounded-md text-center sm:text-3xl hover:border-solid hover:border-2 hover:border-green-600" id="experiencebutton">
+                Experience
+            </div>
+            <div class="px-2.5 bg-black rounded-md text-center sm:text-3xl hover:border-solid hover:border-2 hover:border-green-600" id="skillbutton">
+                Skills
+            </div>
+        </div>
+        <div>
+            <h2 class="decoration-solid underline decoration-green-600 text-2xl text-white">Experiences</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 mt-6 gap-2">
+                <a href="aws.com">
+                    <div class="border-solid border-transparent hover:border-green-600 border-2 p-2.5 group flex flex-col items-center justify-center">
+                        <img class="h-28" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/320px-Amazon_Web_Services_Logo.svg.png" alt="">
+                        <p class="text-white text-2xl">12/21/2024</p>
+                        <p class="text-white text-2xl">Aws</p>
+                        <p class="group-hover:opacity-100 opacity-0">Click to see details</p>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+        <div>
+            <h2 class="decoration-solid underline decoration-green-600 text-2xl text-white">Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 mt-6 gap-2">
+                <a href="aws.com">
+                    <div class="border-solid border-transparent hover:border-green-600 border-2 p-2.5 group flex flex-col items-center justify-center">
+                        <img class="h-28" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/320px-Amazon_Web_Services_Logo.svg.png" alt="">
+                        <p class="text-white text-2xl">12/21/2024</p>
+                        <p class="text-white text-2xl">Aws</p>
+                        <p class="group-hover:opacity-100 opacity-0">Click to see details</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- social media link also down below / missing the views / js for the tabs / intro to page animation / better tab style / animation for the title of the job -->
+
+<!--        <img src="{{ MEDIA_ROOT }}/Screenshot_from_2024-12-12_12-11-55_nvQR0LN.png"/>-->
     </body>
