@@ -1,0 +1,56 @@
+.typed {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: 5.2vw;
+    border-right: 4px solid black;
+    width: 0;
+    max-width: max-content;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end) forwards infinite, blinking 0.7s infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking {
+  0% {border-right-color: transparent}
+  50% {border-right-color: black}
+  100% {border-right-color: transparent}
+}
+
+#initial {
+  animation: borderout 1s steps(1, end) forwards;
+}
+
+#uefi {
+  animation: borderout 0.8s steps(1, end) forwards;
+  animation-delay: 1s;
+}
+
+#archl{
+  animation: borderout 1s steps(1, end) forwards;
+  animation-delay: 1.8s;
+}
+
+#homepage{
+  animation: in 2s ease both;
+  animation-delay: 3.5s;
+}
+
+@keyframes displaynone {
+  0% {display: flex;}
+  100% {display: none;}
+}
+@keyframes borderout {
+  0% {background-color:#d4d4d4; color:black}
+  100% {background-color: black; color: #d4d4d4;}
+}
+
+@keyframes in {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
